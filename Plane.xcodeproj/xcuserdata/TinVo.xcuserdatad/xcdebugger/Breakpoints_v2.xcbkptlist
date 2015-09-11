@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Plane/GamePlayScene.swift"
-            timestampString = "463557647.693484"
+            timestampString = "463634642.949482"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "GamePlayScene"
             landmarkType = "3">
             <Locations>

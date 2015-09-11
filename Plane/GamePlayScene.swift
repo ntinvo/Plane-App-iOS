@@ -17,6 +17,7 @@ class GamePlayScene: SKScene {
         case PLANE = 1
         case SCORELABEL = 2
         case BULLET = 3
+        case MONSTERS = 4
     }
     
     /* Variable */
@@ -25,6 +26,7 @@ class GamePlayScene: SKScene {
     var touch = UITouch()
     var background = SKSpriteNode()
     var plane = SKSpriteNode()
+    var monsters = SKSpriteNode()
     var scoreLabel = SKLabelNode()
     var fireRate = CGFloat()
     var gameON = Bool()
@@ -34,24 +36,52 @@ class GamePlayScene: SKScene {
     
     /* Constant variables */
     let SPEED: CGFloat = 160
+    let MONSTERS_SPEED: CGFloat = 120
+    let PLANE_TOUCH_DISTANCE: CGFloat = 15
     
+    /* Randomly generated the number between low and high */
+    func randomGen(low: CGFloat, high: CGFloat) -> CGFloat  {
+        let value = CGFloat(arc4random_uniform(UINT32_MAX)) / CGFloat(UINT32_MAX)
+        return CGFloat (value * (high - low) + low)
+    }
+    
+    /* First one to run */
     override func didMoveToView(view: SKView) {
         initObjects() /* Init objs */
-        animateBackground() /* Move bg t the left */
-        
-        
+        animateBackground() /* Move bg to the left */
+        spawningMonsterFunc() /* Spawning the monsters */
         gameON = true
         fireRate = 0.7
     }
     
+    /* Create the actions for spawn the monster */
+    func spawningMonsterFunc() {
+        let spawn = SKAction.sequence([SKAction.waitForDuration(2, withRange: 1),
+                                       SKAction.performSelector("spawningMonster", onTarget: self)])
+        self.runAction(SKAction.repeatActionForever(spawn))
+    }
+    
+    /* Spawning the monsters */
+    func spawningMonster() {
+        monsters = SKSpriteNode(imageNamed: "fly_1")
+        monsters.position = CGPointMake(self.size.width + 1, randomGen(0, high: self.size.height))
+        monsters.zPosition = objectZPos.MONSTERS.rawValue
+        let destinationPoint = CGPointMake(-monsters.size.width / 2, randomGen(0, high: self.size.height))
+        
+        let moveMonsters = SKAction.sequence([SKAction.moveTo(destinationPoint, duration: 10),
+                                              SKAction.removeFromParent()])
+        monsters.runAction(moveMonsters)
+        self.addChild(monsters)
+    }
+    
     /* Move the plane */
-    func changePlanePos(timeMove: NSTimeInterval, des: CGPoint) {
+    func changePos(timeMove: NSTimeInterval, des: CGPoint) {
         
         /* Apply the formular to find distance between to points */
         let distance: CGFloat = sqrt(pow(plane.position.x - des.x, 2) +
                                      pow(plane.position.y - des.y, 2))
         
-        if distance > 4 {
+        if distance > PLANE_TOUCH_DISTANCE {
             /* Distance and moving angle */
             let totalDistance: CGFloat = CGFloat(timeMove) * SPEED
             let moveAngle: CGFloat = atan2(des.y - plane.position.y,
@@ -69,7 +99,7 @@ class GamePlayScene: SKScene {
     func initObjects() {
         plane = childNodeWithName("plane") as! SKSpriteNode
         scoreLabel = childNodeWithName("score") as! SKLabelNode
-        
+    
         plane.zPosition = objectZPos.PLANE.rawValue;
         scoreLabel.zPosition = objectZPos.SCORELABEL.rawValue;
     }
@@ -79,7 +109,7 @@ class GamePlayScene: SKScene {
     func animateBackground() {
         let bg = SKTexture(imageNamed: "background")
         let moveBackground = SKAction.sequence([SKAction.moveByX(-bg.size().width, y: 0, duration: 12),
-            SKAction.moveByX(bg.size().width, y: 0, duration: 0)])
+                                                SKAction.moveByX(bg.size().width, y: 0, duration: 0)])
         for var i: CGFloat = 0; i < 3; i++ {
             background = SKSpriteNode(texture: bg)
             background.zPosition = objectZPos.BACKGROUND.rawValue
@@ -125,16 +155,13 @@ class GamePlayScene: SKScene {
         if touching {
             var touchPos: CGPoint = touch.locationInNode(self)
             touchPos.x += 20
-            changePlanePos(timePeriod, des: touchPos)
+            changePos(timePeriod, des: touchPos)
             if CGFloat(currentTime - lastFire) > fireRate {
                 planeShoot()
                 lastFire = currentTime
             }
         }
         lastTime = currentTime
+        //print(currentTime)
     }
-
-    
-    
-    
 }
