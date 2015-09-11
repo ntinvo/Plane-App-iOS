@@ -26,6 +26,11 @@
 		4CA11F881B9EB9BE0082C6DE /* textGameOver.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA11F851B9EB9BE0082C6DE /* textGameOver.png */; settings = {ASSET_TAGS = (); }; };
 		4CA11F891B9EB9BE0082C6DE /* textGetReady.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA11F861B9EB9BE0082C6DE /* textGetReady.png */; settings = {ASSET_TAGS = (); }; };
 		4CA11F8A1B9EB9BE0082C6DE /* UIbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA11F871B9EB9BE0082C6DE /* UIbg.png */; settings = {ASSET_TAGS = (); }; };
+		4CBE6BB61BA12A1100DBB47F /* groundGrass.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CBE6BB51BA12A1100DBB47F /* groundGrass.png */; settings = {ASSET_TAGS = (); }; };
+		4CBE6BBA1BA14CF900DBB47F /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CBE6BB81BA14CF900DBB47F /* spark.png */; settings = {ASSET_TAGS = (); }; };
+		4CBE6BBC1BA14D5900DBB47F /* Fire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4CBE6BBB1BA14D5900DBB47F /* Fire.sks */; settings = {ASSET_TAGS = (); }; };
+		4CBE6BBE1BA1519C00DBB47F /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CBE6BBD1BA1519C00DBB47F /* fire.png */; settings = {ASSET_TAGS = (); }; };
+		4CD599541BA27A4B00791A02 /* trail_00.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD599531BA27A4B00791A02 /* trail_00.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +76,11 @@
 		4CA11F851B9EB9BE0082C6DE /* textGameOver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textGameOver.png; sourceTree = "<group>"; };
 		4CA11F861B9EB9BE0082C6DE /* textGetReady.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textGetReady.png; sourceTree = "<group>"; };
 		4CA11F871B9EB9BE0082C6DE /* UIbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIbg.png; sourceTree = "<group>"; };
+		4CBE6BB51BA12A1100DBB47F /* groundGrass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = groundGrass.png; sourceTree = "<group>"; };
+		4CBE6BB81BA14CF900DBB47F /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		4CBE6BBB1BA14D5900DBB47F /* Fire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Fire.sks; sourceTree = "<group>"; };
+		4CBE6BBD1BA1519C00DBB47F /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
+		4CD599531BA27A4B00791A02 /* trail_00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trail_00.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +143,8 @@
 				4CA11F531B9EB7B90082C6DE /* Info.plist */,
 				4C71BB2A1B9F192B00AA7BAF /* GamePlayScene.sks */,
 				4C71BB2C1B9F194100AA7BAF /* GamePlayScene.swift */,
+				4CBE6BB81BA14CF900DBB47F /* spark.png */,
+				4CBE6BBB1BA14D5900DBB47F /* Fire.sks */,
 			);
 			path = Plane;
 			sourceTree = "<group>";
@@ -161,10 +173,13 @@
 				4CA11F851B9EB9BE0082C6DE /* textGameOver.png */,
 				4CA11F861B9EB9BE0082C6DE /* textGetReady.png */,
 				4CA11F871B9EB9BE0082C6DE /* UIbg.png */,
+				4CBE6BBD1BA1519C00DBB47F /* fire.png */,
+				4CBE6BB51BA12A1100DBB47F /* groundGrass.png */,
 				4CA11F7D1B9EB9B10082C6DE /* tap.png */,
 				4CA11F7E1B9EB9B10082C6DE /* tapLeft.png */,
 				4CA11F7F1B9EB9B10082C6DE /* tapRight.png */,
 				4CA11F801B9EB9B10082C6DE /* tapTick.png */,
+				4CD599531BA27A4B00791A02 /* trail_00.png */,
 				4CA11F7A1B9EB8BC0082C6DE /* planeGreen1.png */,
 			);
 			name = images;
@@ -284,16 +299,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CA11F7B1B9EB8BC0082C6DE /* planeGreen1.png in Resources */,
+				4CBE6BB61BA12A1100DBB47F /* groundGrass.png in Resources */,
 				4CA11F461B9EB7B80082C6DE /* GameScene.sks in Resources */,
 				4CA11F8A1B9EB9BE0082C6DE /* UIbg.png in Resources */,
 				4CA11F521B9EB7B80082C6DE /* LaunchScreen.storyboard in Resources */,
 				4C71BB2B1B9F192B00AA7BAF /* GamePlayScene.sks in Resources */,
 				4CA11F841B9EB9B10082C6DE /* tapTick.png in Resources */,
+				4CBE6BBE1BA1519C00DBB47F /* fire.png in Resources */,
 				4CA11F891B9EB9BE0082C6DE /* textGetReady.png in Resources */,
 				4CA11F881B9EB9BE0082C6DE /* textGameOver.png in Resources */,
 				4CA11F811B9EB9B10082C6DE /* tap.png in Resources */,
 				4CA11F4F1B9EB7B80082C6DE /* Assets.xcassets in Resources */,
 				4CA11F821B9EB9B10082C6DE /* tapLeft.png in Resources */,
+				4CBE6BBA1BA14CF900DBB47F /* spark.png in Resources */,
+				4CD599541BA27A4B00791A02 /* trail_00.png in Resources */,
+				4CBE6BBC1BA14D5900DBB47F /* Fire.sks in Resources */,
 				4CA11F4D1B9EB7B80082C6DE /* Main.storyboard in Resources */,
 				4CA11F831B9EB9B10082C6DE /* tapRight.png in Resources */,
 			);

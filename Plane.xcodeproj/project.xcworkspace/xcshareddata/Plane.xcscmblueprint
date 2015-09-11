@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "699E87AED8BFCE31D29AE39D0CCC39766A7085DF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "699E87AED8BFCE31D29AE39D0CCC39766A7085DF" : 0,
+    "D2ED4DD70F79457CB2B7FAFB0CDD259221025B49" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "01A4906B-2537-449F-AB63-2FA27B8E3CF9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "699E87AED8BFCE31D29AE39D0CCC39766A7085DF" : "Plane\/",
+    "D2ED4DD70F79457CB2B7FAFB0CDD259221025B49" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Plane",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Plane.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tinvo1101\/Plane-App-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "699E87AED8BFCE31D29AE39D0CCC39766A7085DF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tinvo1101\/Apps.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D2ED4DD70F79457CB2B7FAFB0CDD259221025B49"
+    }
+  ]
+}

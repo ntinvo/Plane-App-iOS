@@ -19,5 +19,98 @@
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Plane/GamePlayScene.swift"
+            timestampString = "463557647.693484"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "GamePlayScene"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Plane.GamePlayScene.gameON.getter : Swift.Bool"
+                  moduleName = "Plane"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/TinVo/Desktop/Apps/Plane/Plane/GamePlayScene.swift"
+                  timestampString = "463554538.35699"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Plane.GamePlayScene.gameON.materializeForSet : Swift.Bool"
+                  moduleName = "Plane"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/TinVo/Desktop/Apps/Plane/Plane/GamePlayScene.swift"
+                  timestampString = "463554538.357554"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Plane.GamePlayScene.init (Plane.GamePlayScene.Type)(size : C.CGSize) -&gt; Plane.GamePlayScene"
+                  moduleName = "Plane"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/TinVo/Desktop/Apps/Plane/Plane/GamePlayScene.swift"
+                  timestampString = "463554538.357791"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "198">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Plane.GamePlayScene.init (Plane.GamePlayScene.Type)() -&gt; Plane.GamePlayScene"
+                  moduleName = "Plane"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/TinVo/Desktop/Apps/Plane/Plane/GamePlayScene.swift"
+                  timestampString = "463554538.358018"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "178">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Plane.GamePlayScene.init (Plane.GamePlayScene.Type)(coder : ObjectiveC.NSCoder) -&gt; Swift.Optional&lt;Plane.GamePlayScene&gt;"
+                  moduleName = "Plane"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/TinVo/Desktop/Apps/Plane/Plane/GamePlayScene.swift"
+                  timestampString = "463554538.358239"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "186">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -29,14 +29,14 @@ class GameScene: SKScene {
     
     
     override func didMoveToView(view: SKView) {
-        initObjectsZPos() /* Init zposition for objects */
+        initObjects() /* Init zposition for objects */
         getHighScore() /* Call helper func to get the highscore */
         tapAnimate() /* Call to animate the tap and taptick */
     }
     
     
     /* Initialize the variables and set zPositions for them */
-    func initObjectsZPos() {
+    func initObjects() {
         title = childNodeWithName("title") as! SKLabelNode
         highScoreLabel = childNodeWithName("highScore") as! SKLabelNode
         planeMain = childNodeWithName("planeMain") as! SKSpriteNode
@@ -88,7 +88,7 @@ class GameScene: SKScene {
         highScoreLabel.text = "Highscore : " + highScore
     }
     
-    
+    /* Touches */
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         if(numTapToBegin <= 1) {
             let planeTransition = SKAction.moveToX(self.frame.width + planeMain.frame.width/2, duration: 2.0)
@@ -101,14 +101,9 @@ class GameScene: SKScene {
                 self.view?.presentScene(newScene!, transition: transition)
             })
         }
-        
-        /*plane.runAction(groupPlaneAction) { () -> Void in
-            let newScene = GamePlay(fileNamed: "GamePlay")
-            let transition = SKTransition.doorsCloseHorizontalWithDuration(1.0);
-            self.view?.presentScene(newScene!, transition: transition)
-        }*/
     }
    
+    /* Update */
     override func update(currentTime: CFTimeInterval) {
         
     }
